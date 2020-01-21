@@ -33,6 +33,7 @@ before_install:
     fi
 
 before_script:
+  - nvm install $TRAVIS_NODE_VERSION
   - git lfs pull
 
 script:
